@@ -1,0 +1,12 @@
+# API Key (Security)
+.env
+
+# Data & Copyright (Very Important!)
+data/raw/
+
+# Results
+results/
+
+# Large Binary Files (Embeddings)
+embeddings/
+
