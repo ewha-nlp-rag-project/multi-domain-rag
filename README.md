@@ -2,6 +2,8 @@
 
 This project aims to build a **Retrieval-Augmented Generation (RAG) system** that provides highly accurate answers to questions regarding Ewha Womans University regulations and various academic domains (MMLU-Pro).
 
+<br/>
+
 ## 🚀 Key Features
 
 - **Semantic Table Parsing**: Maximized retrieval precision by converting complex table structures in the university regulations—which are difficult to capture using standard text extraction—into structured Markdown using the Upstage Document Parse API.
@@ -11,6 +13,8 @@ This project aims to build a **Retrieval-Augmented Generation (RAG) system** tha
 - **2-Stage Pipeline**: Designed to first classify the category of the question (Stage 1), and then generate the final answer using a prompt and knowledge base optimized for that specific domain (Stage 2).
 - **Domain-Specific Prompting**: Optimized reasoning performance by providing the LLM with personas and One-shot examples tailored to the specific characteristics of each domain (Law, Psychology, Business, etc.).
 
+<br/>
+
 ## 🏗 System Architecture
 
 1. **Stage 1 - Category Classification**:
@@ -19,6 +23,8 @@ This project aims to build a **Retrieval-Augmented Generation (RAG) system** tha
 2. **Stage 2 - Hybrid RAG**:
    - **Retriever Selection:** Selects either the Ewha or Academic hybrid retriever based on the classification results to search for the relevant context.
    - **Answer Generation:** Combines the retrieved context with domain-specific prompts and feeds them into `solar-pro2` to deduce the final answer.
+
+<br/>
 
 ## 🚀 Quick Start
 
@@ -56,6 +62,8 @@ Run `src/embedding-code.ipynb` to build the knowledge base for Retrieval.
 
 Run `src/run.ipynb` to start the 2-Stage RAG system and generate answers for the test set.
 
+<br/>
+
 ## 📂 Project Structure
 
 ```
@@ -84,6 +92,8 @@ NLP-project
 └── requirements.txt                # List of dependency packages
 ```
 
+<br/>
+
 ## 📊 Performance
 
 - **Testset Accuracy: 88.00%**
@@ -92,6 +102,8 @@ NLP-project
 - **Sampled MMLU-Pro Accuracy**: **63.00%**
 - **Category Classification Accuracy**: **91.00%**
 
+<br/>
+
 ## 🛠 Tech Stack
 
 - **Language**: Python
@@ -99,6 +111,8 @@ NLP-project
 - **Embedding**: Upstage solar-embedding-1-large
 - **Framework**: LangChain, FAISS, BM25
 - **Parsing**: Upstage Document Parse API
+
+<br/>
 
 ## 👥 Contributors
 
