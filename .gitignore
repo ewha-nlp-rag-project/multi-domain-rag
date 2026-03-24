@@ -2,11 +2,13 @@
 .env
 
 # Data & Copyright (Very Important!)
-data/raw/
+data/raw/*
+!data/raw/.gitkeep
 
 # Results
-results/
+results/*
+!results/.gitkeep
 
 # Large Binary Files (Embeddings)
-embeddings/
-
+embeddings/*
+!embeddings/.gitkeep
