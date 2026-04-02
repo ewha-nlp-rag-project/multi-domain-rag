@@ -1,4 +1,4 @@
-# Multi-Domain QA System
+# Multi-Domain RAG System
 
 This project aims to build a **Retrieval-Augmented Generation (RAG) system** that provides highly accurate answers to questions regarding Ewha Womans University regulations and various academic domains (MMLU-Pro).
 
